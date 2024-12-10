@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", function(event) { 
+
 let polySynth;
 
 let data, tempConversion 
@@ -125,3 +127,4 @@ function changeTime(time){
 
 // }
 
+});
