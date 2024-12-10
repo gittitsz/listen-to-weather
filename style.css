@@ -1,0 +1,12 @@
+body {
+    background: radial-gradient(rgb(255, 253, 149), green, black);
+    color:rgb(253, 245, 127);
+    height:100vh;
+    font-family: arial, sans-serif;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+.very-tiny{
+    font-size: 6px;
+}
