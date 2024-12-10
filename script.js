@@ -59,6 +59,7 @@ function setup() {
 
 
 function mousePressed() {
+    getAudioContext().resume();
     playDay(currentRow);
     currentRow++
     if (currentRow == 47) {
