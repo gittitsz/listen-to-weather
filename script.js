@@ -78,13 +78,13 @@ function playDay(day) {
     console.log(isRainy);
     let wind = data.get(day,5);
     let sun = data.get(day,7);
-    let time = data.get(day,1);
+    let timeThe = data.get(day,1);
 
     let cloudySunNote = getNote(27 + Math.floor(10 * cloudy / 100));
     let temperatureSound = getNote(temperature);
     let rainSound = getNote(rain);
 
-   changeTime(time);
+   changeTime(timeThe);
 
     polySynth.play(temperatureSound, cloudy * vol / 100, 0, intervalDuration);
     if (isRainy) {
@@ -127,4 +127,4 @@ function changeTime(time){
 
 // }
 
-});
+  });
