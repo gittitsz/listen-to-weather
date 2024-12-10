@@ -5,12 +5,6 @@ window.onload = function() {
     // ...
   }
   
-  // One-liner to resume playback when user interacted with the page.
-  document.querySelector('button').addEventListener('click', function() {
-    context.resume().then(() => {
-      console.log('Playback resumed successfully');
-    });
-  });
 
 let polySynth;
 
