@@ -40,6 +40,7 @@ function preload() {
     }, error => {
         console.error('Error loading CSV:', error);
     });
+	console.log("here");
 }
 
 function setup() {
@@ -55,7 +56,7 @@ function setup() {
 audioContext = new AudioContext();
 }
 
-console.log("here");
+
 function mousePressed() {
 	console.log("clicked");
     getAudioContext().resume();
