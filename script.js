@@ -1,10 +1,3 @@
-// Existing code unchanged.
-window.onload = function() {
-    var context = new AudioContext();
-    // Setup all nodes
-    // ...
-  }
-  
 
 let polySynth;
 
@@ -59,13 +52,12 @@ function setup() {
 //   text('Click to advance 10 minutes', 20, 20);
 
   polySynth = new p5.PolySynth();
-  getAudioContext().resume();
-
+audioContext = new AudioContext();
 }
 
 
 function mousePressed() {
-    getAudioContext().resume();
+    audioContext().resume();
     playDay(currentRow);
     currentRow++
     if (currentRow == 47) {
