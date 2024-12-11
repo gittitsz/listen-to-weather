@@ -37,10 +37,11 @@ function preload() {
     loadTable(urlTemp, 'csv', 'header', table => {
         tempConversion = table
         console.log(tempConversion);
+	    console.log("here");
     }, error => {
         console.error('Error loading CSV:', error);
     });
-	console.log("here");
+	
 }
 
 function setup() {
