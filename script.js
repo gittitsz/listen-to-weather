@@ -57,7 +57,8 @@ audioContext = new AudioContext();
 
 
 function mousePressed() {
-    audioContext().resume();
+	console.log("clicked");
+    getAudioContext().resume();
     playDay(currentRow);
     currentRow++
     if (currentRow == 47) {
