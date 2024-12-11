@@ -55,7 +55,7 @@ function setup() {
 audioContext = new AudioContext();
 }
 
-
+console.log("here");
 function mousePressed() {
 	console.log("clicked");
     getAudioContext().resume();
